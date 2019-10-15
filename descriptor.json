@@ -57,6 +57,26 @@
             "type": "String",
             "optional": false,
             "set-by-server": true
+        },
+        {
+            "id": "threshold_value",
+            "value-key": "@ID",
+            "command-line-flag": "--@id",
+            "name": "Threshold",
+            "description": "Intensity threshold. Low values are recommended by the authors since the oversegmented mask will ensure all filament pixels are included in the initial graph.",
+            "type": "String",
+            "default-value": "AUTO",
+            "optional": true
+        },
+        {
+            "id": "auto_downsampled",
+            "value-key": "@ID",
+            "command-line-flag": "--@id",
+            "name": "Auto-downsample",
+            "description": "Trace in an auto-downsampled volume. True (default)",
+            "type": "Boolean",
+            "default-value": true,
+            "optional": true
         }
     ]
 }
